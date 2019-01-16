@@ -1,0 +1,23 @@
+<div class="col s12">
+
+  <div class="row">
+    <div class="input-field col s6">
+      {{input class="light" value=this.newProd.homepage key-up=(action "handleChIn") }}
+      <label for="homepage">Homepage</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6">
+      {{input class="light" value=this.newProd.description key-up=(action "handleChIn")}}
+      <label for="description">Description</label>
+    </div>
+  </div>
+  <div class="row">
+    <button class="btn waves-effect waves-light" onclick={{action "actAdd"}} disabled={{this.addEnab}}>
+      Add
+    </button>
+    <button class="btn waves-effect waves-light" onclick={{action "actClear"}}>
+      Clear
+    </button>
+  </div>
+</div>

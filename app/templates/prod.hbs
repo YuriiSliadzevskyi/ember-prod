@@ -1,0 +1,22 @@
+<div class="row">
+  {{prod-form}}
+</div>
+<h4>List of Product</h4>
+<table border="1">
+  <thead>
+  <tr>
+    <td>Id</td>
+    <td>Homepage</td>
+    <td>Description</td>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each this.model as |item|}}
+    <tr>
+      <td>{{item.id}}</td>
+      <td>{{item.homepage}}</td>
+      <td>{{item.description}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
